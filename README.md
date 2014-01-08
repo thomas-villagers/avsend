@@ -29,5 +29,6 @@ Examples:
 
 For a complete list of available commands see http://thinkflood.com/media/manuals/yamaha/Yamaha-YNCA-Receivers.pdf
 
-Please modify the variable TCP_IP in this script to point at your receiver's ip (eg. '192.168.0.123')
+Please modify the variable TCP_IP in this script to point at your receiver's ip (eg. '192.168.0.123').
+
 Default port is 50000 and should work out of the box.
