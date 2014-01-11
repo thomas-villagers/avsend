@@ -5,11 +5,12 @@ Sends YNCA commands via TCP to Yamaha AV Receiver models RX-V673, RX-A720, RX-V7
 
 Usage:
 
-    avsend.py [-u UNIT] -c COMMAND ARGUMENTS" 
+    avsend.py [h] [v] [-u UNIT] -c COMMAND [ARGUMENTS]" 
 
 Flags:
 
     -h, --help        print this help and exit
+    -v, --verbose     verbose output
     -u, --unit        specify a subunit: main, sys, zone2, tun, server, netradio, usb, ipodusb, airplay etc. Defaults to main
     -c, --command     command to send, e. g. vol, inp, mute, enhancer, soundprg, etc.
     ARGUMENTS defaults to ?
@@ -26,6 +27,8 @@ Examples:
     avsend -c soundprg 7ch Stereo
     avsend -u server -c repeat All
     avsend -u server -c shuffle On
+    avsend -u zone2 -c pwr On
+    avsend -u sys -c party On
 
 For a complete list of available commands see http://thinkflood.com/media/manuals/yamaha/Yamaha-YNCA-Receivers.pdf
 
