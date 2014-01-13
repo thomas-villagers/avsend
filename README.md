@@ -21,8 +21,8 @@ Examples:
     avsend -c vol Up
     avsend -c vol -45.0   (be CAREFUL with positive numbers here!)
     avsend -c vol Up 5 dB
-    avsend -c mute on
-    avsend -c mute off
+    avsend -c mute On
+    avsend -c mute Off
     avsend -c inp HDMI1
     avsend -c soundprg 7ch Stereo
     avsend -u server -c repeat All
