@@ -5,7 +5,7 @@ Sends YNCA commands via TCP to Yamaha AV Receiver models RX-V673, RX-A720, RX-V7
 
 Usage:
 
-    avsend.py [h] [v] [-u UNIT] -c COMMAND [ARGUMENTS] 
+    avsend.py [-h] [-v] [-u UNIT] -c COMMAND [ARGUMENTS] 
 
 Flags:
 
