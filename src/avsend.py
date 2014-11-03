@@ -44,11 +44,16 @@ def sendMessage(unit, command, arguments, verbose):
 	        print "send command " +  msg + " to " + TCP_IP + " port", TCP_PORT
         msg +=  "\r\n"
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect((TCP_IP, TCP_PORT))
-        s.send(msg)
-        data = s.recv(BUFFER_SIZE)
-        s.close
-	print data.rstrip()
+        s.settimeout(2.0)
+        try:
+                s.connect((TCP_IP, TCP_PORT))
+                s.send(msg)
+                data = s.recv(BUFFER_SIZE)
+                s.close
+                print data.rstrip()
+        except socket.timeout as msg:
+                print "No connection to " + TCP_IP
+                sys.exit(1)
 
 def main(argv):
         unit = "@MAIN"
