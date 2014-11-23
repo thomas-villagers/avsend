@@ -1,7 +1,7 @@
 avsend
 ======
 
-Sends YNCA commands via TCP to Yamaha AV Receiver models RX-V673, RX-A720, RX-V773, RX-A820, RX-A1020 etc.
+Sends YNCA commands via TCP to Yamaha AV Receiver models RX-V673, RX-A720, RX-V773, RX-A820, RX-A1020 etc. for Home Automation.
 
 Usage:
 
@@ -11,6 +11,7 @@ Flags:
 
     -h, --help        print this help and exit
     -v, --verbose     verbose output
+    -a, --address     specify Receiver network name or IP (default is "RX-A820")
     -u, --unit        specify a subunit: main, sys, zone2, tun, server, netradio, usb, ipodusb, airplay etc. Defaults to main
     -c, --command     command to send, e. g. vol, inp, mute, enhancer, soundprg, etc.
     ARGUMENTS defaults to ?
