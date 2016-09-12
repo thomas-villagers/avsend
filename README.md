@@ -31,7 +31,7 @@ Examples:
     avsend -u zone2 -c pwr On
     avsend -u sys -c party On
 
-For a complete list of available commands see http://thinkflood.com/media/manuals/yamaha/Yamaha-YNCA-Receivers.pdf
+A complete list of available commands can be found in graemorgan's project at https://github.com/graememorgan/yamaha 
 
 Please modify the variable TCP_IP in this script to point at your receiver's ip (eg. '192.168.0.123').
 
